@@ -8,3 +8,15 @@ for i in range(tamanho):
     numeros.append(valor)
 
 print(numeros)
+
+# BUSCA LINEAR
+numero_pesquisa = int(input("Digite o valor a ser pesquisado no vetor: "))
+posicao_resultado = -1
+for i in range(tamanho):
+    if numeros[i] == numero_pesquisa:
+        posicao_resultado = i
+        break
+if posicao_resultado == -1:
+    print("Número não encontrado no vetor")
+else:
+    print(f"O número foi encontrado na posição {posicao_resultado}")
