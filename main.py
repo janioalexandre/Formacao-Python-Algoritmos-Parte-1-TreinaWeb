@@ -20,3 +20,19 @@ if posicao_resultado == -1:
     print("Número não encontrado no vetor")
 else:
     print(f"O número foi encontrado na posição {posicao_resultado}")
+
+# FIM BUSCA LINEAR
+
+# SELECT SORT
+for i in range(tamanho):
+    indice_menor = i
+    for j in range(int(i + 1), tamanho):
+        if numeros[j] < numeros[indice_menor]:
+            indice_menor = j
+    
+    temp = numeros[indice_menor]
+    numeros[indice_menor] = numeros[i]
+    numeros[i] = temp
+    print("vetor: ", numeros)   
+
+# FIM SELECT SORT
